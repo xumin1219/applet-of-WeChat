@@ -1,0 +1,30 @@
+/* pages/payment/payment.wxss */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button-sp-area{
+ width: 750rpx;
+ text-align: center;
+ padding: 10px 0;
+}
+.mini-btn{
+ width: 180rpx;
+ margin: 0 15rpx 15rpx
+}
+.btn-on[type=default]{
+ background-color: #1AAD19 ;
+ color: #fff;
+}

@@ -1,0 +1,27 @@
+/* pages/clause/clause.wxss */
+.weui-article__h3{
+ font-size: 36rpx;
+ line-height: 40rpx;
+ text-indent: 60rpx;
+ color: #666
+}
+.weui-article__p{
+ font-size: 32rpx;
+ line-height: 40rpx;
+ text-indent: 60rpx;
+ color: #666
+}
+.page__bd_spacing{
+ position: fixed;
+ left: 0;
+ bottom: 0;
+ width: 750rpx;
+ margin: 0;
+ padding: 20rpx 0 0;
+ background-color: #fff;
+
+}
+.weui-btn{
+ width: 690rpx;
+ margin: 30rpx auto
+}

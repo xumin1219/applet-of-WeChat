@@ -1,0 +1,23 @@
+{
+ "pages": [
+  "pages/index/index",
+  "pages/logs/logs",
+  "pages/issue/issue",
+  "pages/user/user",
+  "pages/payment/payment",
+  "pages/logistics/logistics",
+  "pages/register/register",
+  "pages/login/login",
+  "pages/password/password",
+  "pages/set/set",
+  "pages/userinfo/userinfo",
+  "pages/about/about",
+  "pages/clause/clause"
+ ],
+ "window": {
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#34a0f2",
+  "navigationBarTitleText": "速递",
+  "navigationBarTextStyle": "#fff"
+ }
+}

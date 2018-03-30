@@ -1,0 +1,47 @@
+.fbox{
+ width: 100%;
+ height: auto; 
+}
+.fbox .fbv{
+  width: 700rpx;
+  margin: 0 auto 20rpx;
+  /* background-color: #eee; */
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.fbox .fbv text{
+  display: inline-block;
+  width: 200rpx;
+  text-align: left;
+  font-size:40rpx;
+  line-height: 80rpx;
+  color: #666;
+}
+.fbox .fbv input{
+  display: inline-block;
+  width: 430rpx;
+  border: 1rpx #eeeeee solid;
+  vertical-align: middle;
+  border-radius: 10rpx;
+  height: 60rpx;
+  padding-left: 20rpx
+}
+.fbox .fbv picker{
+  display: inline-block;
+  width: 430rpx;
+}
+
+.fbox .fbv picker view{
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 20rpx
+}
+
+.weui-input{
+  text-align: right;
+}
+.weui-btn{
+  width: 90%;
+  margin: 20rpx auto 0
+}

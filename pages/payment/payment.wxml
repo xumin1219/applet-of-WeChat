@@ -1,0 +1,33 @@
+<!--pages/payment/payment.wxml-->
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+ <view class="page__hd">
+  <view class="page__title">我的零钱</view>
+  <view class="page__desc">￥0.00元</view>
+ </view>
+<view class="weui-cells__title">请选择充值金额</view>
+  <view class="button-sp-area">
+   <button class="weui-btn mini-btn btn-on" type="default" size="mini">5元</button>
+   <button class="weui-btn mini-btn" type="default" size="mini">10元</button>
+   <button class="weui-btn mini-btn" type="default" size="mini">20元</button>
+   <button class="weui-btn mini-btn" type="default" size="mini">30元</button>
+   <button class="weui-btn mini-btn" type="default" size="mini">50元</button>
+   <button class="weui-btn mini-btn" type="default" size="mini">100元</button>
+  </view>
+ <view class="page__bd">
+ <view class="weui-cells__title">请选择支付方式</view>
+  <view class="weui-cells weui-cells_after-title">
+   <radio-group bindchange="radioChange">
+    <label class="weui-cell weui-check__label" wx:for="{{radioItems}}" wx:key="value">
+     <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}" />
+     <view class="weui-cell__bd">{{item.name}}</view>
+     <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.checked}}">
+      <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+     </view>
+    </label>
+   </radio-group>
+  </view>
+  <view class="weui-btn-area">
+   <button class="weui-btn" type="primary" bindtap="showTopTips">充值</button>
+  </view>
+ </view>
+</view>

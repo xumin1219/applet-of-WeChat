@@ -1,0 +1,35 @@
+/* pages/login/login.wxss */
+.login{
+  width: 750rpx;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.login image{
+  margin-bottom: 0;
+}
+.weui-toptips {
+  font-size: 30rpx;
+}
+
+.weui-btn-area {
+  margin: 100rpx 15px 50rpx;
+  text-align: center;
+}
+
+.weui-btn {
+  margin-bottom: 20px;
+}
+
+.mini-btn {
+  margin: 0 1px 0;
+  color: #666;
+}
+
+.mini-btn::after {
+  border: none;
+}
+
+button[type=default] {
+  background-color: #fff;
+}

@@ -1,0 +1,121 @@
+<!--index.wxml-->
+<view class='body'>
+ <!-- 文字跑马灯 -->
+ <view class="marquee">
+  <image class="marqueeimg" style='width:40rpx;margin-right: 10rpx' src='../images/guangbo.png' mode='widthFix'></image>
+  <view class="content">
+    <text>{{marquee.pmd}}</text>
+    <text style="display: inline-block; width: 100rpx;"></text>
+  </view>
+ </view>
+ <!-- 轮播图 -->
+ <swiper class='sbox' indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+  <block wx:for="{{imgUrls}}" wx:key='imgUrls'>
+   <swiper-item>
+    <image src="{{item.tp_lj}}" class="slide-image" style='width:750rpx' />
+   </swiper-item>
+  </block>
+ </swiper>
+ <button id='issue' bindtap='issue'>我要发布</button>
+ <!-- tab切换 -->
+ <view class="page__bd">
+  <view class="weui-tab">
+   <view class="weui-navbar">
+    <block wx:for="{{tabs}}" wx:key="*this">
+     <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+      <view class="weui-navbar__title">{{item}}</view>
+     </view>
+    </block>
+    <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+   </view>
+   <view class="weui-tab__panel">
+    <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+     <block wx:for="{{si_0}}" wx:key="si_0">
+      <block wx:for="{{item}}" wx:key="{{item.express}}">
+       <view class='sibox'>
+        <view class='sibt1'>{{item.express}}</view>
+        <view class='sibt2'>
+         <image style='width:35rpx;margin-right: 4rpx' src='../images/dw.png' mode='widthFix'></image>
+         {{item.site}}</view>
+        <view class='sibt3'>{{item.time}}</view>
+        <view class='sibt4'>取件号
+         <text>{{item.num}}</text>
+        </view>
+        <view class='sibtn'>
+         <button class="weui-btn mini-btn btn1" type="default" disabled='true' size="mini">{{item.state}}</button>
+         <button class="weui-btn mini-btn btn2" type="default" size="mini" bindtap='makePhoneCall' data-tell='{{item.mobile}}'>联系他</button>
+        </view>
+       </view>
+      </block>
+     </block>
+    </view>
+    <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+     <block wx:for="{{si_1}}" wx:key="si_1">
+      <block wx:for="{{item}}" wx:key="{{item.express}}">
+       <view class='sibox'>
+        <view class='sibt1'>{{item.express}}</view>
+        <view class='sibt2'>
+         <image style='width:35rpx;margin-right: 4rpx' src='../images/dw.png' mode='widthFix'></image>
+         {{item.site}}</view>
+        <view class='sibt3'>{{item.time}}</view>
+        <view class='sibt4'>取件号
+         <text>{{item.num}}</text>
+        </view>
+        <view class='sibtn'>
+         <button class="weui-btn mini-btn btn1" type="default" disabled='true'  size="mini">{{item.state}}</button>
+         <button class="weui-btn mini-btn btn2" type="default" size="mini" bindtap='makePhoneCall' data-tell='{{item.mobile}}'>联系他</button>
+        </view>
+       </view>
+      </block>
+     </block>
+    </view>
+    <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+     <block wx:for="{{si_2}}" wx:key="si_2">
+      <block wx:for="{{item}}" wx:key="{{item.express}}">
+       <view class='sibox'>
+        <view class='sibt1'>{{item.express}}</view>
+        <view class='sibt2'>
+         <image style='width:35rpx;margin-right: 4rpx' src='../images/dw.png' mode='widthFix'></image>
+         {{item.site}}</view>
+        <view class='sibt3'>{{item.time}}</view>
+        <view class='sibt4'>取件号
+         <text>{{item.num}}</text>
+        </view>
+        <view class='sibtn'>
+         <button class="weui-btn mini-btn btn1" type="default" disabled='true'  size="mini">{{item.state}}</button>
+         <button class="weui-btn mini-btn btn2" type="default" size="mini" bindtap='makePhoneCall' data-tell='{{item.mobile}}'>联系他</button>
+        </view>
+       </view>
+      </block>
+     </block>
+    </view>
+    <view class="weui-tab__content" hidden="{{activeIndex != 3}}">
+     <block wx:for="{{si_3}}" wx:key="si_3">
+      <block wx:for="{{item}}" wx:key="{{item.express}}">
+       <view class='sibox'>
+        <view class='sibt1'>{{item.express}}</view>
+        <view class='sibt2'>
+         <image style='width:35rpx;margin-right: 4rpx' src='../images/dw.png' mode='widthFix'></image>
+         {{item.site}}</view>
+        <view class='sibt3'>{{item.time}}</view>
+        <view class='sibt4'>取件号
+         <text>{{item.num}}</text>
+        </view>
+        <view class='sibtn'>
+         <button class="weui-btn mini-btn btn1" type="default" disabled='true' size="mini">{{item.state}}</button>
+         <button class="weui-btn mini-btn btn2" type="default" size="mini" bindtap='makePhoneCall' data-tell='{{item.mobile}}'>联系他</button>
+        </view>
+       </view>
+      </block>
+     </block>
+    </view>
+   </view>
+  </view>
+ </view>
+
+ <button class='user-btn' bindtap='uesr'>
+  <image class='user_img' style='width:60rpx' src='../images/user.png' mode='widthFix'></image>
+ </button>
+
+
+</view>

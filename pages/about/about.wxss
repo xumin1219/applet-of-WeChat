@@ -1,0 +1,30 @@
+/* pages/about/about.wxss */
+.top{
+ width: 750rpx;
+ padding: 80rpx 0 20rpx;
+ text-align: center;
+}
+.top image{
+ display: block;
+ margin: 0 auto 20rpx;
+}
+.top .toptitle{
+ font-size: 40rpx;
+ color: #333;
+ line-height: 60rpx;
+ width: 750rpx;
+ text-align: center
+}
+.top .phtitle{
+ display: block;
+ width: 90%;
+ margin: 20rpx auto;
+ font-size: 32rpx;
+ line-height: 36rpx;
+ color: #666666;
+ text-align: left;
+ text-indent: 40rpx
+}
+.weui-cell__ft{
+ font-size: 30rpx
+}

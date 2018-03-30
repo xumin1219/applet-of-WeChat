@@ -1,0 +1,44 @@
+/* pages/user/user.wxss */
+
+.m1 {
+ background-color: #34a0f2;
+ height: 300rpx;
+ position: relative;
+ border-radius: 0 0 50% 50%;
+ margin-bottom: 40rpx;
+}
+
+.userinfo-button{
+ position: absolute;
+ width: 50%;
+ top: 30%;
+ left: 25%;
+ margin: 0;
+ padding: 0;
+ color: #fffffF;
+ background-color: transparent;
+}
+
+.userinfo-button::after{
+ border: none;
+}
+
+.userinfo-avatar {
+ position: absolute;
+ width: 128rpx;
+ height: 128rpx;
+ margin-left: -64rpx;
+ border-radius: 50%;
+ top: 10%;
+ left: 50%;
+}
+
+.userinfo-nickname {
+ position: absolute;
+ top: 60%;
+ left: 0;
+ width: 750rpx;
+ color: #fff;
+ font-size: 40rpx;
+ text-align: center
+}

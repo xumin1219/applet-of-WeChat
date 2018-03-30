@@ -1,0 +1,23 @@
+<view class="page">
+ <view class='top'>
+  <image src='../images/logo.png' style='width:180rpx' mode='widthFix'></image>
+  <view class="toptitle">指尖校园</view>
+  <view class="phtitle">“指尖校园”是扬州华恒网络科技有限公司于2018年4月推出的一款大学生生活服务软件。大学生通过“指尖校园”发出订单需求，可以在指定时间指定地点收到快递。致力于解决校园物流中部分痛点，通过深度“众包”改变物流分发模式，通过信息互联实现共享经济，让校园学生的每一次出行更有价值。</view>
+ </view>
+ <view class="page__bd">
+  <view class="weui-cells weui-cells_after-title">
+   <view class="weui-cell">
+    <view class="weui-cell__bd">客服QQ</view>
+    <view class="weui-cell__ft">748554531</view>
+   </view>
+   <view class="weui-cell">
+    <view class="weui-cell__bd">官方微信</view>
+    <view class="weui-cell__ft">指尖校园生活服务平台</view>
+   </view>
+   <view class="weui-cell">
+    <view class="weui-cell__bd">电子邮箱</view>
+    <view class="weui-cell__ft">huaheng001@aliyun.com</view>
+   </view>
+  </view>
+ </view>
+</view>

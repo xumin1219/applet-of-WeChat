@@ -1,0 +1,5 @@
+/* pages/set/set.wxss */
+.weui-btn{
+ width: 710rpx;
+ margin: 20px auto 0
+}

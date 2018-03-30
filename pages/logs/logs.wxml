@@ -1,0 +1,5 @@
+<!--logs.wxml-->
+<text>{{marquee}}</text>
+<view wx:for="{{Industry}}" wx:key='Industry'>  
+    {{item.tp_lj}}  
+  </view>  
